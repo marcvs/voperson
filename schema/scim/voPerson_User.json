@@ -375,17 +375,6 @@
                     "mutability": "readWrite",
                     "returned": "default",
                     "uniqueness": "none"
-                },
-                {
-                    "name": "version",
-                    "description": "Denotes versions of the policy that were agreed to",
-                    "type": "string",
-                    "multiValued": true,
-                    "required": false,
-                    "caseExact": true,
-                    "mutability": "readWrite",
-                    "returned": "default",
-                    "uniqueness": "none"
                 }
             ]
         },
@@ -395,10 +384,22 @@
             "type": "string",
             "multiValued": true,
             "required": false,
-            "caseExact": false,
             "mutability": "readWrite",
             "returned": "default",
-            "uniqueness": "none"
+            "uniqueness": "none",
+            "subAttributes": [
+                {
+                    "name": "value",
+                    "description": "Value of the voPersonScopedAffiliation. Example: gradstudent",
+                    "type": "string",
+                    "multiValued": false,
+                    "required": true,
+                    "caseExact": false,
+                    "mutability": "readWrite",
+                    "returned": "default",
+                    "uniqueness": "none"
+                }
+            ]
         },
         {
             "name": "voPersonSoRID",
@@ -484,6 +485,17 @@
                 {
                     "name": "role",
                     "description": "Denotes a role specific status if present (otherwise overall person status)",
+                    "type": "string",
+                    "multiValued": false,
+                    "required": false,
+                    "caseExact": false,
+                    "mutability": "readWrite",
+                    "returned": "default",
+                    "uniqueness": "none"
+                },
+                {
+                    "name": "scope",
+                    "description": "Denotes status is as asserted by source system",
                     "type": "string",
                     "multiValued": false,
                     "required": false,
