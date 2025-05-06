@@ -1,7 +1,7 @@
 {
     "schemas": [
         "urn:ietf:params:scim:schemas:core:2.0:User",
-        "urn:temporaryNamespace:scim:schemas:voPerson:User"
+        "urn:geant:scim:schemas:voPerson:User"
     ],
     "id": "d7a53cb23423420398409de7355956560282158ecac8f3d2c770b474862f4756",
     "meta": {
@@ -12,7 +12,7 @@
         "version": "W/\"f250dd84f0671c3\""
     },
     "userName": "Elizabeth Alexandra Mary Mountbatten Windsor",
-    "urn:temporaryNamespace:scim:schemas:voPerson:User": {
+    "urn:geant:scim:schemas:voPerson:User": {
         "voPersonAffiliation": [
             {
                 "value": "gradstudent",
