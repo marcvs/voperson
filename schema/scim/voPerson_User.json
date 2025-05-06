@@ -560,17 +560,6 @@
                     "uniqueness": "none"
                 }
             ]
-        },
-        {
-            "name": "voPersonSshPublicKey",
-            "description": "SSH public key(s) of the user",
-            "type": "string",
-            "multiValued": true,
-            "required": false,
-            "caseExact": true,
-            "mutability": "readWrite",
-            "returned": "default",
-            "uniqueness": "none"
         }
     ]
 }
