@@ -1,6 +1,6 @@
 {
-    "id": "urn:temporaryNamespace:scim:schemas:voPerson:User",
-    "name": "VO Person Provile",
+    "id": "urn:geant:scim:schemas:voPerson:User",
+    "name": "VO Person Profile",
     "description": "voPerson is both a set of recommendations and an ldap attribute schema (object class), intended to provide a common reference point for attribute management within a Virtual Organization (VO)",
     "attributes": [
         {
@@ -324,7 +324,7 @@
             "subAttributes": [
                 {
                     "name": "value",
-                    "description": "Value of the voPersonExternalID. Example: plee@university.edu",
+                    "description": "Value of the voPersonID. Example: plee@university.edu",
                     "type": "string",
                     "multiValued": false,
                     "required": true,
@@ -361,7 +361,7 @@
                     "type": "string",
                     "multiValued": false,
                     "required": true,
-                    "caseExact": true,
+                    "caseExact": false,
                     "mutability": "readWrite",
                     "returned": "default",
                     "uniqueness": "none"
