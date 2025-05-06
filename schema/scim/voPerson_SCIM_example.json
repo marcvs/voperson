@@ -120,10 +120,6 @@
                 "value": "liz@gmail.com",
                 "preferred": false
             }
-        ],
-        "voPersonSshPublicKey": [
-            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAqA5FW6m3FbFhCOsRQBxKMRki5qJxoNhZdaeLXg6ym/",
-            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK4/7MGLu0yTQP8mtDNlLtXjvG5WqnXDMoE92bV0whlt"
         ]
     }
 }
