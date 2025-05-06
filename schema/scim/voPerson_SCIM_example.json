@@ -83,7 +83,9 @@
             }
         ],
         "voPersonScopedAffiliation": [
-            "member@community.of.royals.uk"
+            {
+                "value": "member@community.of.royals.uk"
+            }
         ],
         "voPersonSoRID": [
             {
