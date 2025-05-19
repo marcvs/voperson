@@ -381,7 +381,7 @@
         {
             "name": "voPersonScopedAffiliation",
             "description": "Used for transport only, this attribute maps voPersonAffiliation when used across the wire. The resulting value should be stored in voPersonExternalAffiliation by the receiving entity.",
-            "type": "string",
+            "type": "complex",
             "multiValued": true,
             "required": false,
             "mutability": "readWrite",
