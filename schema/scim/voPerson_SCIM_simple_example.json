@@ -1,0 +1,37 @@
+{
+    "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:User",
+        "urn:geant:scim:schemas:voPersonSimple:User"
+    ],
+    "id": "d7a53cb23423420398409de7355956560282158ecac8f3d2c770b474862f4756",
+    "meta": {
+        "resourceType": "User",
+        "created": "2011-08-01T18:29:49.793Z",
+        "lastModified": "Invalid date",
+        "location": "https://example.com/v2/Users/2819c223...",
+        "version": "W/\"f250dd84f0671c3\""
+    },
+    "userName": "Elizabeth Alexandra Mary Mountbatten Windsor",
+    "urn:geant:scim:schemas:voPersonSimple:User": {
+        "voPersonAffiliation": [ "gradstudent" ],
+        "voPersonApplicationPassword": [
+            "{bcrypt}$2y$10$NCAEogo6Q1boibEUAshANeR.Xy5ruAuEgF9us5pDvC.Ujo9kaiwY."
+        ],
+        "voPersonApplicationUID": [ "plee@myvo.org" ],
+        "voPersonAuthorName": [ "P Q Lee" ],
+        "voPersonCertificateDN": [ "C = DE, O = GermanGrid, OU = KIT, CN = Queen Elizabeth" ],
+        "voPersonCertificateIssuerDN": [ "CN=CILogon Basic CA 1, O=CILogon, C=US, DC=cilogon, DC=org" ],
+        "voPersonExternalAffiliation": [ "gradstudent@yourvo.org" ],
+        "voPersonExternalID": [ "610400998542241058734@google.com" ],
+        "voPersonID": [ "V097531" ],
+        "voPersonPolicyAgreement": [ "https://myvo.org/policies/acceptable-use" ],
+        "voPersonScopedAffiliation": [ "member@community.of.royals.uk" ],
+        "voPersonSoRID": [ "E00747400" ],
+        "voPersonStatus": [ "active" ],
+        "voPersonToken": [ "SERIAL12345" ],
+        "voPersonVerifiedEmail": [
+            "elizabeth@royal.uk",
+            "liz@gmail.com"
+        ]
+    }
+}

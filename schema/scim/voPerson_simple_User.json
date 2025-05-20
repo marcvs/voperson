@@ -1,0 +1,189 @@
+{
+    "id": "urn:geant:scim:schemas:voPersonSimple:User",
+    "name": "VO Person Profile",
+    "description": "voPerson is both a set of recommendations and an ldap attribute schema (object class), intended to provide a common reference point for attribute management within a Virtual Organization (VO)",
+    "attributes": [
+        {
+            "name": "voPersonAffiliation",
+            "description": "An organization-specific affiliation, intended to parallel but expand upon eduPersonAffiliation, allowing for finer grained descriptions of affiliations (such as graduate student, undergraduate, research, PI, administrator, etc).",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonApplicationPassword",
+            "description": "An application specific password, corresponding roughly with the person object class userPassword attribute, but constrained to one application or one cluster of applications. The use of the app- attribute option is required to denote the target application. Multiple values for the same app are permitted when encoded in different formats.",
+            "type": "string",
+            "multiValued": true,
+            "required": true,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": true
+        },
+        {
+            "name": "voPersonApplicationUID",
+            "description": "An application specific identifier, corresponding roughly with the inetOrgPerson uid, but constrained to one application or one cluster of applications.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonAuthorName",
+            "description": "The formal author name of the subject, suitable for publication purposes.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonCertificateDN",
+            "description": "The Subject Distinguished Name of an X.509 certificate held by the person.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": true
+        },
+        {
+            "name": "voPersonCertificateIssuerDN",
+            "description": "The Subject Distinguished Name of the X.509 certificate issuer. The use of the scope attribute option is required to denote the correlating certificate.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": true
+        },
+        {
+            "name": "voPersonExternalAffiliation",
+            "description": "An organization-specific affiliation as per voPersonAffiliation, but obtained from an external organization, and therefore scoped.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonExternalID",
+            "description": "An explicitly scoped identifier for a person, typically as issued by an external authentication service such as a federated or social identity provider.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "global",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonID",
+            "description": "The platform or enterprise identifier.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "immutable",
+            "returned": "request",
+            "uniqueness": "global",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonPolicyAgreement",
+            "description": "The URL describing a policy that has been agreed to by the person identified by this record.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonScopedAffiliation",
+            "description": "Used for transport only, this attribute maps voPersonAffiliation when used across the wire. The resulting value should be stored in voPersonExternalAffiliation by the receiving entity.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonSoRID",
+            "description": "An implicitly scoped identifier for a person, typically as issued by a system of record. This is a 'behind the scenes' or system-centric identifier, and generally cannot be used for authentication.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false
+        },
+        {
+            "name": "voPersonStatus",
+            "description": "The person's status within the organization. A set of standard values are defined, though the values of this attribute are not constrained to them",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none",
+            "caseExact": false,
+            "canonicalValues": [
+                "active",
+                "approved",
+                "confirmed",
+                "declined",
+                "deleted",
+                "denied",
+                "duplicate",
+                "expired",
+                "gracePeriod",
+                "invited",
+                "pending",
+                "pendingApproval",
+                "pendingConfirmation",
+                "suspended"
+            ]
+        },
+        {
+            "name": "voPersonToken",
+            "description": "An identifier for an authentication token associated with the person, typically a token serial number.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "server",
+            "caseExact": true
+        },
+        {
+            "name": "voPersonVerifiedEmail",
+            "description": "An email address of the same definition as the inetOrgPerson mail attribute (RFC 4524), with the additional characteristic that the address has been verified as being controlled by the subject of the record.",
+            "type": "string",
+            "multiValued": true,
+            "required": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "global",
+            "caseExact": false
+        }
+    ]
+}
+
