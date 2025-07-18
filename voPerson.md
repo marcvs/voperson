@@ -778,6 +778,10 @@ voPersonExternalID: 610400998542241058734@google.com
 
 The platform or enterprise identifier.
 
+Note: The multi valuedness of this attribute is intended to cater for
+multiple attribute options. There should only be a single value for the
+actual value of `voPersonID`, i.e. without any `prior` options.
+
 ### Alternate Approaches
 
 * A similar approach is possible leveraging the already existing *uid* attribute, but
