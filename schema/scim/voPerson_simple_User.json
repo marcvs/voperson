@@ -1,5 +1,5 @@
 {
-    "id": "urn:geant:scim:schemas:voPersonSimple:User",
+    "id": "urn:geant:scim:schemas:voPerson:SimpleUser",
     "name": "VO Person Profile",
     "description": "voPerson is both a set of recommendations and an ldap attribute schema (object class), intended to provide a common reference point for attribute management within a Virtual Organization (VO)",
     "attributes": [
@@ -19,7 +19,7 @@
             "description": "An application specific password, corresponding roughly with the person object class userPassword attribute, but constrained to one application or one cluster of applications. The use of the app- attribute option is required to denote the target application. Multiple values for the same app are permitted when encoded in different formats.",
             "type": "string",
             "multiValued": true,
-            "required": true,
+            "required": false,
             "mutability": "readWrite",
             "returned": "default",
             "uniqueness": "none",
@@ -98,7 +98,7 @@
             "multiValued": true,
             "required": false,
             "mutability": "immutable",
-            "returned": "request",
+            "returned": "default",
             "uniqueness": "global",
             "caseExact": false
         },
