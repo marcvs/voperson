@@ -1,7 +1,7 @@
 {
     "schemas": [
         "urn:ietf:params:scim:schemas:core:2.0:User",
-        "urn:geant:scim:schemas:voPersonSimple:User",
+        "urn:geant:scim:schemas:voPerson:SimpleUser",
         "urn:geant:scim:schemas:voPerson:User"
     ],
     "id": "d7a53cb23423420398409de7355956560282158ecac8f3d2c770b474862f4756",
